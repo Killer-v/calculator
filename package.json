@@ -1,0 +1,24 @@
+{
+  "name": "calculeta",
+  "version": "1.0.0",
+  "description": "block calculator",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Killer-v/calculator.git"
+  },
+  "author": "https://killer-v.github.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Killer-v/calculator/issues"
+  },
+  "homepage": "https://github.com/Killer-v/calculator#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-transform-modules-commonjs": "^7.22.5"
+  }
+}
