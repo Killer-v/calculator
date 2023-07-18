@@ -1,0 +1,155 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #0e0e0ec2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-box {
+    width: min-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #1d1d20;
+    color: azure;
+    box-shadow: 0px 0px 16px #262525;
+}
+@media (max-width: 285px) and (min-height: 466px) {
+    .calculator-box {
+        padding: 10px;
+    }
+}
+
+.conclusion {
+    width: 100%;
+    font-size: 40px;
+    background-color: #1d1d20;
+    color: azure;
+    text-align: end;
+    outline: none;
+    border: none;
+}
+@media (max-width: 357px) and (min-height: 466px){
+    .conclusion {
+        width: 97%;
+    }
+}
+@media (max-width: 255px) and (min-height: 466px){
+    .conclusion {
+        font-size: 29px;
+    }
+}
+
+/* height */
+@media (max-width: 590px) and (max-height: 465px), (max-height: 340px){
+    .conclusion {
+        font-size: 33px;
+    }
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #333;
+}
+@media (max-width: 357px) and (min-height: 466px){
+    .btn {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 19px;
+    }
+}
+@media (max-width: 255px) and (min-height: 466px){
+    .btn {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* height */
+@media (min-width: 350px) and (max-height: 465px){
+    #plus, #minus {
+        width: 100%;
+        border-radius: 30px;
+    }
+}
+@media (max-width: 590px) and (max-height: 465px), (max-height: 340px){
+    .btn {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 17px;
+    }
+}
+
+.btn:hover {
+    filter: brightness(120%)
+}
+
+.btn:active {
+    filter: brightness(90%)
+}
+
+.button-box {
+    display: grid;
+    grid-template-areas:
+        "as delete percent division"
+        "seven eight nine myltiply"
+        "four five six minus"
+        "one two three plus"
+        "zero zero dot equal";
+    gap: 15px;
+}
+@media (max-width: 357px) and (min-height: 466px) {
+    .button-box {
+        gap: 10px;
+    }
+}
+@media (max-width: 267px)  and (min-height: 466px){
+    .button-box {
+        gap: 4px;
+    }
+}
+
+/* height */
+@media (min-width: 350px) and (max-height: 465px) {
+    .button-box {
+        grid-template-areas:
+            "as delete percent division myltiply plus plus"
+            "six seven eight nine zero minus minus"
+            "one two three four five dot equal"
+        ;
+    }
+}
+@media (max-width: 590px) and (max-height: 465px), (max-height: 340px){
+    .button-box {
+        gap: 4px;
+    }
+}
+
+.bg-orange {
+    background-color: #734f00ee;
+}
+
+.bg-grey {
+    background-color: #555555;
+}
+
+.zero {
+    width: 100%;
+    border-radius: 30px;
+}
